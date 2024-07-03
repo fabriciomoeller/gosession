@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login </title>
+  </head>
+  <body>
+    <h1>Login</h1>
+    <div>
+      <p style="color:red">{{.}}</p>
+      <form action="/signin" method="POST">
+        <div>
+          <label for="username">Username:</label>
+          <input type="text" name="username" id="username">
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" name="password" id="password">
+        </div>
+        <div>
+          <button type="submit">Login</button>
+        </div>
+    </div>
+  </body>
+
